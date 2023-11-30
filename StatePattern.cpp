@@ -4,6 +4,9 @@
 
 enum TrafficLightType {RED, AMBER, GREEN};
 
+/// <summary>
+/// Base state abstract class
+/// </summary>
 class TrafficLightState
 {
 public:
@@ -15,6 +18,10 @@ protected:
     std::string colour;
 };
 
+
+/// <summary>
+/// Concrete classes 
+/// </summary>
 class RedTrafficLightState : public TrafficLightState
 {
 public:
@@ -57,6 +64,9 @@ public:
     }
 };
 
+/// <summary>
+/// Context
+/// </summary>
 class TrafficLight 
 {
 public:
